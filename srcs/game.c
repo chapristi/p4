@@ -1,7 +1,7 @@
 #include "../includes/game.h"
 #include <stdlib.h>
 
-void game_init(t_game *game)
+void	game_init(t_game *game)
 {
 	int i = -1;
 	game->rows = 6;
@@ -11,7 +11,7 @@ void game_init(t_game *game)
 		game->grid[i] = calloc(game->columns, sizeof(char));
 }
 
-void ft_game_free(t_game *game)
+void	ft_game_free(t_game *game)
 {
 	int i = -1;
 	while (++i < game->rows)

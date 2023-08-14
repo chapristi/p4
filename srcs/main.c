@@ -17,12 +17,12 @@
 #include "../includes/game_status.h"
 
 
-void put_char(char c)
+void	put_char(char c)
 {
     write(1, &c, 1);
 }
 
-void    grid_gen(t_game *game)
+void	grid_gen(t_game *game)
 {
 	int i = -1;
     int j = -1;
@@ -56,7 +56,7 @@ void    grid_gen(t_game *game)
 }
 
 
-int ft_check_win(t_game *game, t_game_status *game_status)
+int	ft_check_win(t_game *game, t_game_status *game_status)
 {
 	int i = -1;
 	int j = -1;
@@ -123,7 +123,7 @@ int	check_entries(int column)
 	return (0);
 }
 
-int main(void)
+int	main(void)
 {
 	int column;
 	unsigned int is_finish;
