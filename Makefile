@@ -16,7 +16,7 @@ ${BIN}: ${OBJ}
 clean:
     rm ${OBJ}
 
-fclean: ${OBJ}
+fclean: clean
     rm ${BIN}
 
 re: fclean all
